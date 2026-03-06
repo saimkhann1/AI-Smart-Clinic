@@ -1,0 +1,45 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "useDefineForClassFields": true,
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "strict": true,
+    "jsx": "preserve",
+    "jsxImportSource": "vue",
+    "sourceMap": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "esModuleInterop": true,
+    "lib": ["ESNext", "DOM"],
+    "skipLibCheck": true,
+    "noEmit": true,
+
+    /* Base URL & Paths (Aliases) */
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["resources/js/*"],
+      "ziggy-js": ["./vendor/tightenco/ziggy"]
+    },
+
+    /* Types Definitions */
+    "types": [
+      "vite/client",
+      "ziggy-js"
+    ]
+  },
+
+  /* Files to Include */
+  "include": [
+    "resources/js/**/*.ts",
+    "resources/js/**/*.d.ts",
+    "resources/js/**/*.tsx",
+    "resources/js/**/*.vue",
+    "tsconfig.vue-global.d.ts"
+  ],
+
+  /* Volar Fix (Jo error de raha tha) */
+  "vueCompilerOptions": {
+    "globalTypesPath": "./tsconfig.vue-global.d.ts"
+  }
+}
