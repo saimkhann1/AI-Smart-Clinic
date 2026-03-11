@@ -1,9 +1,10 @@
-<script setup>
+<script setup >
 import AuthenticatedLayout from '@/Layouts/AuthenticatedLayout.vue';
 import { Head, Link, useForm } from '@inertiajs/vue3';
 
 // Backend se aane wala data (Props)
-const props = defineProps({
+// 'const props =' hata diya gaya hai taake unused variable ka error na aaye
+defineProps({
     appointments: Array,
     user: Object,
     auth: Object
