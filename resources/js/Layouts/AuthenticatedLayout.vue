@@ -1,5 +1,5 @@
 <script setup>
-import ApplicationLogo from '@/components/ApplicationLogo.vue';
+import ApplicationLogo from '@/Components/ApplicationLogo.vue';
 import Dropdown from '@/Components/Dropdown.vue';
 import DropdownLink from '@/Components/DropdownLink.vue';
 import NavLink from '@/Components/NavLink.vue';
