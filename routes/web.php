@@ -16,6 +16,10 @@ Route::get('/', function () {
     return redirect()->route('login');
 });
 
+Route::get('/contact', function () {
+    return Inertia::render('Contact');
+})->name('contact');
+
 // Protected Routes (Login ke baad hi chalenge)
 Route::middleware(['auth', 'verified'])->group(function () {
 
