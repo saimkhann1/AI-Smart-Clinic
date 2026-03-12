@@ -51,10 +51,10 @@ const updateStatus = (id, status) => {
                     <Link :href="route('appointments.create')" class="bg-blue-600 text-white px-4 py-2 rounded shadow hover:bg-blue-700 transition">
                         + Book New Appointment
                     </Link>
-                    <Link href="#" class="bg-purple-600 text-white px-4 py-2 rounded shadow hover:bg-purple-700 transition">
+                 <Link :href="route('patient.record.show')" class="bg-purple-600 text-white px-4 py-2 rounded shadow hover:bg-purple-700">
                         My Medical History
                     </Link>
-                    <Link href="#" class="bg-gray-600 text-white px-4 py-2 rounded shadow hover:bg-gray-700 transition">
+                    <Link :href="route('invoices.index')" class="bg-gray-600 text-white px-4 py-2 rounded shadow hover:bg-gray-700">
                         My Invoices
                     </Link>
                 </div>
